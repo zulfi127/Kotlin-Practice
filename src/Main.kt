@@ -150,15 +150,26 @@ fun sayHello(greeting:String, vararg itemsToGreet:String) {
 fun greetPerson(greeting: String, name: String) = println("$greeting $name")
 // fun greetPerson(greeting: String = "Hello", name: String = "Furhat") = println("$greeting $name")
 
-fun main() {
+/*fun main() {
     greetPerson("Hi", "Faruk")
     greetPerson(name = "Faruk", greeting = "Hi") // named parameters with "=" allows us to pass in the values in any order.
     // greetPerson()
     val interestingThings = arrayOf("Kotlin", "Programming", "Comic Books")
     sayHello(itemsToGreet = interestingThings, greeting ="Hi")
-}
+}*/
 
 // Classes
+fun main() {
+    val person = Person() // create a new instance of a class.
+    /*person.lastName
+    person.firstName
+    person.nickName = "Ruruke"
+    person.nickName = "Pipiru"
+    println(person.nickName)*/
+    person.printInfo()
+}
 
+// Visibility Modifiers - Public/Private/Protected/Public
 
+// Interfaces
 
